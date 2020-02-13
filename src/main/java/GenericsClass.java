@@ -17,4 +17,8 @@ public class GenericsClass <T> {
         this.variable = variable;
     }
 
+
+    public GenericsClass() {
+
+    }
 }

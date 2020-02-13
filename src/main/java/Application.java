@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * A simple introduction to Java Generics.
  *
@@ -6,6 +8,9 @@
 public class Application{
 
     public static void main(String[] args) {
+
+        GenericsClass<String> stringInstance;
+        GenericsClass<Integer> integerInstance;
 
         Integer[] intArray = {12,324,6,7900};
 
@@ -17,12 +22,12 @@ public class Application{
         printArrayContent(stringArray);
         System.out.println();
 
-        GenericsClass<String> stringInstance = new GenericsClass<>();
-        stringInstance.set("Test");
 
+        stringInstance = new GenericsClass<>();
+        stringInstance.set("Test");
         stringInstance.get(); // print out Test
 
-        GenericsClass<Integer> integerInstance = new GenericsClass<>();
+         integerInstance = new GenericsClass<>();
         integerInstance.set(1000);
 
         integerInstance.get(); // print out 1000
